@@ -1,0 +1,53 @@
+root ➜ /workspaces/sandbox (main) $ nmap -p- -A zsjestrebi.bakalari.cz
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-05-06 17:20 UTC
+Nmap scan report for zsjestrebi.bakalari.cz (217.16.183.113)
+Host is up (0.019s latency).
+rDNS record for 217.16.183.113: bakalari.cz
+Not shown: 65520 filtered ports
+PORT      STATE  SERVICE      VERSION
+80/tcp    open   http         Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Did not follow redirect to https://zsjestrebi.bakalari.cz/
+|_https-redirect: ERROR: Script execution failed (use -d to debug)
+443/tcp   open   ssl/http     Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+| http-server-header: 
+|   Microsoft-HTTPAPI/2.0
+|_  Microsoft-IIS/10.0
+| http-title: Bakal&#225;\xC5\x99i - p\xC5\x99ihl&#225;\xC5\xA1en&#237; do syst&#233;mu
+|_Requested resource was /login
+|_http-trane-info: Problem with XML parsing of /evox/about
+| ssl-cert: Subject: commonName=*.bakalari.cz
+| Subject Alternative Name: DNS:*.bakalari.cz, DNS:bakalari.cz
+| Not valid before: 2025-04-11T00:00:00
+|_Not valid after:  2026-05-12T23:59:59
+|_ssl-date: 2025-05-06T17:22:38+00:00; 0s from scanner time.
+| tls-alpn: 
+|_  http/1.1
+5601/tcp  closed esmagent
+6116/tcp  closed xtlserv
+8080/tcp  closed http-proxy
+8090/tcp  closed opsmessaging
+8091/tcp  closed jamlink
+8092/tcp  closed unknown
+8093/tcp  closed unknown
+8095/tcp  closed unknown
+9200/tcp  closed wap-wsp
+54207/tcp closed unknown
+54345/tcp closed unknown
+54417/tcp closed unknown
+54732/tcp closed unknown
+Device type: specialized
+Running (JUST GUESSING): AVtech embedded (89%)
+Aggressive OS guesses: AVtech Room Alert 26W environmental monitor (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 13 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 8080/tcp)
+HOP RTT      ADDRESS
+1   ... 12
+13  18.53 ms bakalari.cz (217.16.183.113)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 128.24 seconds
+root ➜ /workspaces/sandbox (main) $ 

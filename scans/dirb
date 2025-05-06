@@ -1,0 +1,43 @@
+root ➜ /workspaces/sandbox (main) $ dirb https://zsjestrebi.bakalari.cz
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Tue May  6 17:36:10 2025
+URL_BASE: https://zsjestrebi.bakalari.cz/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: https://zsjestrebi.bakalari.cz/ ----
++ https://zsjestrebi.bakalari.cz/api (CODE:200|SIZE:77)                                                                                                                                   
++ https://zsjestrebi.bakalari.cz/app_themes (CODE:302|SIZE:138)                                                                                                                           
++ https://zsjestrebi.bakalari.cz/cas (CODE:302|SIZE:138)                                                                                                                                  
+==> DIRECTORY: https://zsjestrebi.bakalari.cz/core/                                                                                                                                       
++ https://zsjestrebi.bakalari.cz/dashboard (CODE:302|SIZE:0)                                                                                                                              
++ https://zsjestrebi.bakalari.cz/if (CODE:403|SIZE:337)                                                                                                                                   
++ https://zsjestrebi.bakalari.cz/log (CODE:200|SIZE:606)                                                                                                                                  
++ https://zsjestrebi.bakalari.cz/Log (CODE:200|SIZE:606)                                                                                                                                  
++ https://zsjestrebi.bakalari.cz/login (CODE:200|SIZE:6026)                                                                                                                               
++ https://zsjestrebi.bakalari.cz/Login (CODE:200|SIZE:6026)                                                                                                                               
++ https://zsjestrebi.bakalari.cz/logout (CODE:302|SIZE:0)                                                                                                                                 
++ https://zsjestrebi.bakalari.cz/menu (CODE:302|SIZE:138)                                                                                                                                 
+                                                                                                                                                                                          
+---- Entering directory: https://zsjestrebi.bakalari.cz/core/ ----
++ https://zsjestrebi.bakalari.cz/core/emergency (CODE:302|SIZE:0)                                                                                                                         
++ https://zsjestrebi.bakalari.cz/core/error (CODE:302|SIZE:0)                                                                                                                             
++ https://zsjestrebi.bakalari.cz/core/events (CODE:302|SIZE:0)                                                                                                                            
++ https://zsjestrebi.bakalari.cz/core/Events (CODE:302|SIZE:0)                                                                                                                            
++ https://zsjestrebi.bakalari.cz/core/favicon.ico (CODE:200|SIZE:15086)                                                                                                                   
++ https://zsjestrebi.bakalari.cz/core/features (CODE:302|SIZE:0)                                                                                                                          
++ https://zsjestrebi.bakalari.cz/core/reports (CODE:302|SIZE:0)                                                                                                                           
++ https://zsjestrebi.bakalari.cz/core/version (CODE:200|SIZE:68)                                                                                                                          
+                                                                                                                                                                                          
+-----------------
+END_TIME: Tue May  6 17:39:45 2025
+DOWNLOADED: 9224 - FOUND: 19
+root ➜ /workspaces/sandbox (main) $ 
